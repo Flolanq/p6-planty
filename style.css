@@ -10,4 +10,61 @@ Version: 3.4.7.1691854307
 Updated: 2023-08-12 15:31:47
 
 */
+.container {
+    max-width: 100%;
+    margin : 0;
+}
+#wpforms-submit-551 {
+    margin-left: 90%;
+    width: 200px;
+    z-index:20 ;
+}
+#wpforms-submit-551:hover {
+    background-color: #C02E44;
+}
+#wpforms-submit-689 {
+    display: none;
+}
 
+.custom-logo {
+    padding-left: 50px;
+}
+
+#wpforms-483-field_1-container {
+    padding-left: 400px;
+
+}
+#wpforms-483-field_2-container {
+    padding-left: 400px;
+  
+}
+#wpforms-483-field_4-container {
+    padding-left: 400px;
+    width: 72%;
+
+}
+
+#wpforms-551-field_2 {
+    height: 70px;
+}
+#wpforms-551-field_3 {
+    height: 70px;
+
+}
+#wpforms-551-field_4 {
+    height: 70px;
+
+}
+#wpforms-580-field_1 {
+    height: 70px;
+
+}
+
+#wpforms-580-field_3 {
+    height: 70px;
+
+}
+#wpforms-580-field_2 {
+    height: 70px;
+
+}
