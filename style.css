@@ -40,7 +40,7 @@ Updated: 2023-08-12 15:31:47
 }
 #wpforms-483-field_4-container {
     padding-left: 400px;
-    width: 72%;
+    width: 90%;
 
 }
 
@@ -67,4 +67,50 @@ Updated: 2023-08-12 15:31:47
 #wpforms-580-field_2 {
     height: 70px;
 
+}
+#menu-item-216 {
+    background-color: #D2776A;
+    
+}
+#menu-item-216:hover {
+    background-color: #C02E44;
+}
+
+#menu-item-216 .text-wrap {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+}   
+.wpforms-submit-container #wpforms-submit-483 {
+    margin-left: 550px;
+}
+#wpforms-submit-483:hover {
+background-color: #C02E44;
+}
+#wpforms-483-field_1 {
+    height: 70px;
+    width: 70%;
+}
+#wpforms-483-field_2 {
+    height: 70px;
+    width: 70%;
+}
+#wpforms-483-field_4 {
+    height: 140px;
+    width: 84%;
+}
+#wpforms-form-483 {
+    padding-left: 50px;
+}
+div.wpforms-container-full .wpforms-field-label {
+    font-weight: normal;
+}
+
+#wpforms-submit-551 {
+    font-weight: 100;
+}
+#footer-bottom.no-footer-nav #copyright {
+    font-size: 20px;
+    margin-left: 100px;
 }
