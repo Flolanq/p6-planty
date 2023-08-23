@@ -22,3 +22,13 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+function add_admin_link_to_menu($items, $args) {
+    $admin_url=admin_url();
+    $admin_link='<li><a href="'.esc_url($admin_url).'">Admin</a> </li>';
+    $items_array=explode('</li>',$items);
+    array_splice($items_array,1,0,$admin_link);
+    $items=implode('</li>', $items_array);
+    return $items;
+}
+add_filter('wp_nav_menu_items','add_admin_link_to_menu',10,2);
