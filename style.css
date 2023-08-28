@@ -18,6 +18,9 @@ Updated: 2023-08-12 15:31:47
     margin-left: 90%;
     width: 200px;
     z-index:20 ;
+    text-transform: initial;
+    font-size: 20px;
+    font-weight: 400;
 }
 #wpforms-submit-551:hover {
     background-color: #C02E44;
@@ -25,7 +28,9 @@ Updated: 2023-08-12 15:31:47
 #wpforms-submit-689 {
     display: none;
 }
-
+#wpforms-submit-580 {
+    display: none;
+}
 .custom-logo {
     padding-left: 50px;
 }
@@ -83,7 +88,7 @@ Updated: 2023-08-12 15:31:47
     padding-right: 30px;
 }   
 .wpforms-submit-container #wpforms-submit-483 {
-    margin-left: 550px;
+    margin-left: 580px;
 }
 #wpforms-submit-483:hover {
 background-color: #C02E44;
@@ -113,4 +118,54 @@ div.wpforms-container-full .wpforms-field-label {
 #footer-bottom.no-footer-nav #copyright {
     font-size: 20px;
     margin-left: 100px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    #wpforms-submit-551 {
+    display: none;
+}
+    #wpforms-submit-689 {
+    display: block;
+    }
+    #wpforms-submit-580.wpforms-submit {
+    display: block;
+    margin-left: 25%;
+    color: white;
+    background-color: #E0B9B4;
+    border-radius: 10%;
+    text-transform:initial;
+    padding: 10%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+    #wpforms-submit-580:hover {
+    background-color: #C02E44;
+}
+    .elementor-16 .elementor-element.elementor-element-52793d7 .elementor-heading-title {
+    text-align: center;
+    }
+
+    .elementor-16 .elementor-element.elementor-element-312d1c2 .elementor-heading-title {
+    text-align: center;
+  
+    }
+    h2.wp-block-heading {
+        font-size: 30px;
+    }
+    #wpforms-483-field_1 {
+        width: 80%;
+    }
+
+    #wpforms-483-field_2 {
+        width: 80%;
+    }
+    #wpforms-483-field_4 {
+        width: 97%;
+    }
+
 }
