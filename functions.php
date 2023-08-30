@@ -24,13 +24,15 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 // END ENQUEUE PARENT ACTION
 
 function add_admin_link_to_menu($items, $args) {
+    $user=is_user_logged_in();
+if ($user=true):
     $admin_url=admin_url(); // Récupère l'url de l'interface d'administration du projet (exemple : "http://planty.local/wp-admin/") à l'aide d'une fonction wordpress et la stoque dans la variable $admin_url
     $admin_link='<li><a href="'.esc_url($admin_url).'">Admin</a> </li>'; // Crée le lien HTML vers l'interface d'administration à partir de l'url récupérée juste avant. // esc_url est une fonction wordpress pour "nettoyer" l'url afin de retirer les caractères spéciaux qui pourraient poser problème
     $items_array=explode('</li>',$items); // Convertit les éléments du menu (qui étaient sous la forme d'une chaine de caractère) en un tableau pour faciliter la manipulation
     array_splice($items_array,1,0,$admin_link); // Insère le lien vers l'interface d'administration que nous avons construit précédemment en deuxième position du tableau
     $items=implode('</li>', $items_array); // Reconvertit le tableau en chaîne de caractères
     return $items; // Permet à la fonction que nous venons de créer de renvoyer le menu modifié (avec le lien que nous avons ajouté)
+endif;
 }
 add_filter('wp_nav_menu_items','add_admin_link_to_menu',10,2); // Ajoute le filtre pour exécuter la fonction "add_admin_link_to_menu" dans le hook "wp_nav_menu_items" // 10 = priorité (par défaut), 2 = nombre d'arguments passés à la fonction (add_admin_link_to_menu)
-
 
